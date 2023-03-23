@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Lãi đơn: Không cộng dồn. Số tiền vay *lãi suất*số năm
+        //Lãi kép: (soTienVay*(1+láiuat))*(1+laiSuat)
+        //VD: Vay 50 tr, LS 6.9%, 5 năm
+        //Năm 1: 50 + 50tr *6.9% = 50tr *(1+0.069)= 53.45 tr
+        //Năm 2: 53.45tr *(1+0.069)
+        let soTienVay = parseInt(prompt("Nhập số tiền vay:"));
+        let laiSuat = parseFloat(prompt("Lãi suất(0.0 - 100.0)"))
+        let soNamVay= parseInt(prompt("Số năm cần vay"))
+
+        let soTienTra= soTienVay + soTienVay *laiSuat/100 *soNamVay;
+        alert("Số tiền phải trả là:" +soTienTra.toFixed(0));
+    </script>
+</body>
+</html>

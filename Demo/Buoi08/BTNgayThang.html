@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+
+    </pre>
+    <script>
+        let nam = prompt("Nhap nam");
+        let thang = prompt("Nhap thang")
+        let ngay = prompt("Nhap ngay")
+
+
+        let nam_so = parseInt(nam);
+        console.log(nam_so);
+        if(isNaN(nam_so)){
+            alert("Nam khong dung dinh dang so nguyen");
+        }
+        //let chuoi = `${ngay}-${thang}-${nam}`;
+        let chuoi = ngay+"-"+thang+"-"+nam;
+        alert(`Ket qua: ${chuoi}`);
+    </script>
+</body>
+</html>
