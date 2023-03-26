@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="mouseover()" onmouseout="mouseout()" id="demo">This is a text</p>
+    <script>
+    // Sử dụng addEventListener thì xóa đi mouseover() và mouseou() trong thẻ
+    // demo.addEventListener("mouseover",mouseover())
+    // demo.addEventListener("mouseout",mouseout())
+    
+        let demo = document.getElementById("demo");
+        function mouseover(){
+            demo.style.color="red";
+        }
+        function mouseout(){
+            demo.style.color = "green";
+        }
+
+    </script>
+</body>
+</html>

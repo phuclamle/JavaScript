@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+
+    <input type="number" id="sothu1">
+    <input type="number" id="sothu2">
+    <br>
+    <input type="button" value="add" onclick="cong()">
+    <input type="button" value="sub" onclick="hieu()">
+    <input type="button" value="mul" onclick="nhan()">
+    <input type="button" value="divi" onclick="chia()">
+
+    <div id="ketqua"></div>
+    <script>
+        function cong(){
+            //các ô nhập liệu thì phải .value
+            let sothu1 = document.getElementById("sothu1").value;
+            sothu1=parseInt(sothu1)
+            let sothu2 = document.getElementById("sothu2").value;
+            sothu2=parseInt(sothu2)
+            let tong = sothu1+sothu2;
+            document.getElementById("ketqua").innerHTML ="Result:Addition =" + tong;
+             }
+        function hieu (){
+            let sothu1 = document.getElementById("sothu1").value;
+            sothu1=parseInt(sothu1)
+            let sothu2 = document.getElementById("sothu2").value;
+            sothu2=parseInt(sothu2)
+            let hieu = sothu1-sothu2;
+            document.getElementById("ketqua").innerHTML = "Result:Subition =" +hieu;
+             }
+             function nhan (){
+            let sothu1 = document.getElementById("sothu1").value;
+            sothu1=parseInt(sothu1)
+            let sothu2 = document.getElementById("sothu2").value;
+            sothu2=parseInt(sothu2)
+            let nhan = sothu1*sothu2;
+            document.getElementById("ketqua").innerHTML = "Result:Multition =" +nhan;
+             }
+             function chia (){
+            let sothu1 = document.getElementById("sothu1").value;
+            sothu1=parseFloat(sothu1)
+            let sothu2 = document.getElementById("sothu2").value;
+            sothu2=parseFloat(sothu2)
+            let chia = sothu1/sothu2;
+            document.getElementById("ketqua").innerHTML = "Result:Divition =" +chia;
+             }
+        
+        
+    </script>
+</body>
+</html>

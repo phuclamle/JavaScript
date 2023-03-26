@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form>
+        <h2>BMI</h2>
+        Chiều cao(m): <input type="number" placeholder="Nhập chiều cao" id="chieuCao" min="0">
+        <br>
+        Cân năng(kg): <input type="number" placeholder="Nhập cân nặng"  id="canNang" min="0">
+        <br>
+        <button type="button" onclick="xuLyTinh()">Tính</button>
+        <div id="ketQua"></div>
+     </form>
+    <script>
+       let chieuCao =parseFloat(document.getElementById("chieuCao").value)
+       let canNang =parseFloat(document.getElementById("canNang").value)
+       let chuoi="";
+       let(!isNaN(chieuCao)&&!isNaN(canNang) &&(chieuCao>0)&&(canNang>0)){
+        let bmi = canNang /(chieuCao*chieuCao)
+       }
+   </script>
+</body>
+</html>

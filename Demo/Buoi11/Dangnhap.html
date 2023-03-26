@@ -8,7 +8,7 @@
 </head>
 <body>
      <script>
-        let id = prompt("Nhập tên đăng nhập");
+        id = prompt("Mời nhập tên:");
         if(id="admin"){
             let passWord = prompt("Mời nhập mật khẩu:");
             if(passWord=== "The Master"){
@@ -16,8 +16,12 @@
             }else if(passWord===null){
                 alert("Cancel");
             }else{
-                alert("Wrong");
+                alert("Wrong password");
             }
+            }else if(id===null){
+                alert('canceled');
+            }else{
+                alert('I don\'t khow');
             }
      </script>
 </body>
