@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let namDuongLich = prompt("Mời nhập năm dương lịch:")
+        
+
+         
+        let namAmLich ="";
+        switch(namDuongLich%10){
+            case 0: namAmLich ="Canh";break;
+            case 1: namAmLich ="Tân";break;
+            case 2: namAmLich ="Nhâm";break;
+            case 3: namAmLich ="Quý";break;
+            case 4: namAmLich ="Giáp";break;
+            case 5: namAmLich ="Ất";break;
+            case 6: namAmLich ="Bính";break;
+            case 7: namAmLich ="Đinh";break;
+            case 8: namAmLich ="Mậu";break;
+            case 9: namAmLich ="Kỷ";break;
+        }
+
+        switch(namDuongLich%12){
+            case 0: namAmLich +=" Thân";break;
+            case 1: namAmLich +=" Dậu";break;
+            case 2: namAmLich +=" Tuất";break;
+            case 3: namAmLich +=" Hợi";break;
+            case 4: namAmLich +=" Tý";break;
+            case 5: namAmLich +=" Sửu";break;
+            case 6: namAmLich +=" Dần";break;
+            case 7: namAmLich +=" Mão";break;
+            case 8: namAmLich +=" Thìn";break;
+            case 9: namAmLich +=" Tỵ";break;
+            case 10: namAmLich +=" Ngọ";break;
+            case 11: namAmLich +=" Mùi";break;
+        }
+        alert(namAmLich);

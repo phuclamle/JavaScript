@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <b>Amount</b> <input id="sotien" type="number">
+   <b>From Currency
+    <select id="select1" name="" id="">
+        <option value="">Việt Nam </option>
+    </select>
+   <b>To Currency</b> <select name="" id="select2">
+        <option value="">Mỹ</option>
+   </select>
+   <button  type="button" onclick="chuyendoitien()">Convert</button>
+   <br>
+   <div id="ketQua"></div>
+   <script>
+    function chuyendoitien(){
+        let sotien=parseFloat(document.getElementById("sotien").value);
+        let from = document.getElementById("select1").value;
+        let to = document.getElementById("select2").value;
+        let result;
+        if(from==="Việt Nam" && to ==="Mỹ"){
+            result = sotien/20;
+        }
+        document.getElementById("ketQua").innerHTML="Result:"+result;
+    }
+    
+    
+   </script>
+</body>
+</html>
