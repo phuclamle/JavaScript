@@ -42,6 +42,11 @@
         }
         alert(namAmLich);
         //cách 2: Dùng mảng
+        let can = ["Canh", "Tân", "Nhâm", "Quý", "Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ"];
+        let chi = ["Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mẹo", "Thìn", "Tỵ", "Ngọ", "Mùi"];
+        let amLich = `${can[namDuongLich % 10]} ${chi[namDuongLich % 12]}`
+
+        alert(`${namDuongLich} ==> ${namAmLich} / ${amLich}`);
     </script>
 </body>
 </html>

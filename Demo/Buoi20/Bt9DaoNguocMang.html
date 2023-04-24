@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let mang = [1,3,4,5,6,4,4];
+        // function daonguocmang(mang){
+        //             mang.reverse();
+        //             document.write(mang);
+        // }
+        // daonguocmang(mang)
+
+        function daoMang(arr){
+            if(arr.length ===0)
+            return [];
+        else{
+                let left =0;
+                 let right = arr.lenght -1;
+                while(left<right){
+                    let swap = arr[left];
+                    arr[left] = arr[right];
+                    arr[right]= swap;
+                    left++;
+                    right--;
+                }
+        }
+        return arr;
+    }
+    let myArr = [29,49,48,77,99];
+    alert(daoMang(myArr));
+    </script>
+</body>
+</html>

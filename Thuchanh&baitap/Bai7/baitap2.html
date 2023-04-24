@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dãy fibonacci -->
+    <script>
+        let num= prompt("Xin mời nhập vào số: ");
+         let so1 =0
+         let so2 =1;
+         let so =0;
+         document.write("0,1");
+        for(i=3;i<=num;i++){{
+            so = so1+so2;
+            so1 = so2;
+            so2= so
+            document.write(","+so);
+
+        }}
+    </script>
+</body>
+</html>

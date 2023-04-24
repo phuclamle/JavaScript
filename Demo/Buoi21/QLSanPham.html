@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mybutton{
+           background-color: green; 
+           color: white;
+           padding: 5 px;
+        }
+    </style>
+ </head>
+ <body>
+    <div>
+        <h2>Add New Product</h2>
+        <input id="tenSanPham" type="text">
+        <button type="button" class="mybutton" onclick="themSanPham()">Add</button>
+
+    </div>
+    <div>
+      <h2>Display All Product</h2>
+      <div><span id="tongSoSp">0</span> products</div>
+    <div id="danhSachSanPham">
+    <div>
+      <span class="tensp">Sony Xperia</span>
+      <button type="button" class="mybutton">Edit</button>
+      <button type="button" class="mybutton">Delete</button>
+    </div>
+    </div>
+    <script>
+      let dsSanPham = ["Samsung Note 21","Iphone 14 Pro Max 256 GB"];
+      function themSanPham(){
+          let tenSp = document.getElementById("tenSanPham").value.trim();
+          if(tenSp !== ''){
+            dsSanPham.push(tenSp);
+            console.log(dsSanPham);
+            document.getElementById("tenSanPham").value = '';
+            document.getElementById('tongSoSp').innerHTML = dsSanPham.length;
+            displayOneProduct(tenSp);
+          }
+      }
+
+      function displayOneProduct(productName){
+        let myDiv = document.createElement("div");
+        let mySpan = document.createElement("span")
+        mySpan.innerHTML = productName;
+        myDiv.appendChild(mySpan);
+
+        let editBtn = document.createElement("button")
+        editBtn.innerHTML = "Edit";
+        editBtn.className = "mybutton";
+        myDiv.appendChild(editBtn);
+
+        let deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "Delete";
+        deleteBtn.className = "mybutton";
+        myDiv.appendChild(deleteBtn);
+
+        document.getElementById("danhSachSanPham").appendChild(myDiv);
+      }
+
+      function display(){
+        for(let idx in dsSanPham){
+          displayOneProduct(dsSanPham[idx]);
+        }
+      }
+       display();
+    </script>
+ </body>
+ </html>

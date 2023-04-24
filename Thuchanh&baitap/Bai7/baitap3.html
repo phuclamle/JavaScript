@@ -7,14 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr>
-            
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-    </table>
+    <script>
+        let N = parseInt(prompt("Nhập số: "));
+        let sokq = 0;
+        while(N>0){
+            let sodu = N%10;
+            sokq = sokq*10+ sodu;
+            N = Math.floor(N/10);
+        }
+        alert(sokq)
+    </script>  
 </body>
 </html>
