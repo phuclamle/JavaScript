@@ -8,9 +8,10 @@
 </head>
 <body>
     <pre>
-        Chuyển đổi chuỗi số thường thành số hoa 
-        VD: Đùng -> đÙNG
-    </pre>
+        Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa. 
+        Ví dụ: nếu bạn nhập vào chuỗi ‘The Quick Brown Fox’ 
+        kết quả của chương trình là ‘tHE qUICK bROWN fOX’.
+         </pre>
     <script>
         let chuoi = prompt("Nhập chuỗi:");
         
@@ -18,13 +19,17 @@
             return string.toUpperCase()===string;
         }
 
+        function isLowerCase(string){
+            return string.toLowerCase()=== string;
+        }
+
         let ketQua =[];
         
             for(let index=0; index < chuoi.length; index++){
                 if(isUpperCase(chuoi[index])){
-                    chuoi[index] = chuoi[index].toLowerCase();
+                    ketQua.push(chuoi[index] = chuoi[index].toLowerCase());
                 }else {
-                    chuoi[index] = chuoi[index].toUpperCase();
+                    ketQua.push(chuoi[index] = chuoi[index].toUpperCase());
                 }
             }
             alert(ketQua.join(""));

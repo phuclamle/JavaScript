@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mang = [6,5,7,8,4,3];
+        let first = 0;
+        let a =0;
+        let last = mang.length -1;
+        while(first<last){
+            a = mang[first]
+            mang[first]= mang[last]
+            mang[last] = a;
+            last --;
+            first++
+        }
+        alert(mang)
+    </script>
+</body>
+</html>

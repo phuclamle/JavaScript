@@ -7,10 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    <pre>
+        Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau. Ví dụ có mảng chuỗi
+như sau: myColor = [“Red”, “Green”, “White”, “Black”];
+Sau khi thực thi chương trình sẽ trả về dạng như sau :
+
+“Red,Green,White,Black”
+    </pre>
     <script>
     //Bài 1
         let myColor = ["Red","Green","White","Black"];
-        document.write(myColor.join(" "));
+        let kq ="";
+        for(let idx in myColor){
+            kq += myColor[idx]+","
+        }
+        document.write(kq)
+        document.write(myColor.join(","));
      
     </script>
 </body>
