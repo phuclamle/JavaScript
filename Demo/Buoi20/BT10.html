@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <pre>
+        Bài 10: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng
+        không.
+        Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+    
+        arr = ['a', 'n', 'c', 'a', 'u', 'm', 'a', 'y']
+        ch = 'a'
+    </pre>
     <script>
+        let  arr = ['a', 'n', 'c', 'a', 'u', 'm', 'a', 'y']
         function demSoLanXuatHien(arr,ch){
             let count =0;
             for(let index in arr){
@@ -16,10 +25,11 @@
                         }
             }
             // for(let idx =0; idx <arr.length; i++){
-
+            //
             // }
             return count;
         }
+        alert(demSoLanXuatHien(arr,'a'));
     </script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Bài 1
+        function xuLy(a,b){
+            if(a>b){
+                alert(`${a}>${b}`);
+            }else{
+                return a + b;
+            }
+        }
+        XuLy(9,6);
+
+        //Bài 2
+        let NgoiSao = ["Polaris", "Aldebaran","Deneb", "Vega"," Altair"," Dubhe ","Regulus"];
+        let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', "Lyra", 'Aquila', 'Ursa Major', 'Leo'];
+
+        function timSao(chuoiTim){
+            for(let index in NgoiSao){
+                if(NgoiSao[index] === chuoiTim){
+                    return chomSao[index];
+                }
+            }
+        }
+        let tim = prompt("Cần tìm ngôi sao:");
+        alert(timSao(tim));
+
+        //Bài 3
+        function binhPhuong(giaTri){
+            return giaTri * giaTri;
+        }
+
+        //Bài 4
+        function tinhDienTich(banKinh){
+            return banKinh * banKinh * Math.PI;
+        }
+
+        function tinhChuVi(banKinh){
+            return 2* Math.PI * banKinh
+        }
+
+        let banKinh = parseInt(prompt("Nhập bán kính: "));
+        if(!isNaN(banKinh)){
+            document.write(`S = ${tinhDienTich(banKinh)}<br>`);
+            document.write(`p = ${tinhChuVi(banKinh)}<br>`);
+    
+        }
+
+        //Bài 5
+        function tinhGiaiThua(N){
+           let kq =1;
+           for(let i =1; i<=N ; i++) {
+            kq = kq*i;// kq+=i
+           }
+
+           return kq;
+        }
+
+        document.write(tinhGiaiThua(101)+"<br>")
+        document.write(tinhGiaiThua(103)+"<br>")
+
+        //Bài 6
+        let kyTu = prompt("Nhập ký tự ");
+        //isNaN //is Not a Number
+        function laKyTuSo(ch){
+            return !isNaN(ch);
+        }
+        document.write(`${kyTu} là ký tự số:${laKyTuSo(kyTu)}`)
+
+        //Bài 7
+        let mang = ''
+        let a = parseInt(prompt("Mời nhập vào giá trị a"))
+        mang.push(a)
+        let b = parseInt(prompt("Mời nhập vào giá trị b"))
+        mang.push(b)
+        let c = parseInt(prompt("Mời nhập vào giá trị c"))
+        mang.push(c)
+        let min = mang[0]
+        function min(arr){
+        for(let i =0; i< mang.length; i++){
+            if(arr[i]<min)
+            min = arr[i]
+        }
+        return min
+    }
+         min(mang)
+
+         //Bài 8
+         let so = parseInt(prompt())
+    </script>
+</body>
+</html>

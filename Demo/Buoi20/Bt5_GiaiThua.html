@@ -8,16 +8,24 @@
 </head>
 <body>
     <pre>
-
+        Bài 5: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    N!= 1*2*3*...*(N-1)*N
+    2! = 1*2 = 2
+    4! = 1*2*3*4 = 24
     </pre>
     <script>
         function tinhGiaiThua(N){
-            for(let i =1;i<=N;i++){
-                    kq=kq*i //kq*=i;
-            }
-            return kq;
+           let kq =1;
+           for(let i =1; i<=N ; i++) {
+            kq = kq*i;// kq+=i
+           }
+
+           return kq;
         }
-        document.write(tinhGiaiThua(101)+"<br>");
+
+        document.write(tinhGiaiThua(101)+"<br>")
+        document.write(tinhGiaiThua(103)+"<br>")
+      
     </script>
 </body>
 </html>

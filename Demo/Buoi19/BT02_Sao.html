@@ -9,7 +9,17 @@
 <body>
     <script>
         let NgoiSao = ["Polaris", "Aldebaran","Deneb", "Vega"," Altair"," Dubhe ","Regulus"];
+        let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', "Lyra", 'Aquila', 'Ursa Major', 'Leo'];
 
+        function timSao(chuoiTim){
+            for(let index in NgoiSao){
+                if(NgoiSao[index] === chuoiTim){
+                    return chomSao[index];
+                }
+            }
+        }
+        let tim = prompt("Cần tìm ngôi sao:");
+        alert(timSao(tim));
     </script>
 </body>
 </html>
