@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Square of <input type="text" oninput="calculate()" name="" id="input"> is: <span id="ketQua"></span>
+    <script>
+        // oninput là hàm xử lý sự kiện khi có giá trị nhập vào ô input
+      function calculate(){
+        let b = document.getElementById("input").value 
+        document.getElementById("ketQua").innerHTML = Math.pow(b,2);
+      }
+    </script>
+</body>
+</html>

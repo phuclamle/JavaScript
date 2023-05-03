@@ -93,7 +93,50 @@
          min(mang)
 
          //Bài 8
-         let so = parseInt(prompt())
+         let so = parseInt(prompt("Mời nhập số:"))
+         function nguyenduong(){
+            if(so>0){
+                return true
+            }else {
+                return false
+            }
+         }
+
+         //Bài 9
+         function daoMang(arr){
+            if(arr.length ===0){
+            return [];
+            }else{
+                let left =0;
+                 let right = arr.length -1;
+                while(left<right){
+                    let swap = arr[left];
+                    arr[left] = arr[right];
+                    arr[right]= swap;
+                    left++;
+                    right--;
+                }
+        }
+        return arr;
+    }
+    let myArr = [29,49,48,77,99];
+    alert(daoMang(myArr));
+
+        //Bài 10
+        let  arr = ['a', 'n', 'c', 'a', 'u', 'm', 'a', 'y']
+        function demSoLanXuatHien(arr,ch){
+            let count =0;
+            for(let index in arr){
+                        if(arr[index]===ch){
+                            count++
+                        }
+            }
+            // for(let idx =0; idx <arr.length; i++){
+            //
+            // }
+            return count;
+        }
+        alert(demSoLanXuatHien(arr,'a'));
     </script>
 </body>
 </html>

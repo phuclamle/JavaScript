@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600" style="border: 1px solid blue;"></canvas>
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        //vẽ trên mặt phẳng Oxy
+        let ctx = canvas.getContext("2d");
+        function Circle(x,y,r) {
+            this.x = x;
+            this.y  = y;
+            this.radius = r;
+        }
+        function createCircle(){
+            ctx.beginPath();
+            let radius = Math.floor(Math.random()*80)
+            let circle = new Circle(500,500,radius);
+            ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI,true);
+            ctx.stroke();
+        }
+
+        createCircle()
+    </script>
+</body>
+</html>

@@ -10,11 +10,18 @@
     <canvas id="myCanvas" width="800" height="600" style="border: 1px solid blue;" ></canvas>
     <script>
         let canvas = document.getElementById("myCanvas")
+        //vẽ trên mặt phằng Oxy
         let ctx = canvas.getContext("2d");
 
+        ctx.strokeStyle = "yellow"
+        ctx.moveTo(100,300)
+        ctx.lineTo(500,300)
+        ctx.stroke();
+
         //vẽ ngôi sao
-        ctx.moveTo(100,300);
-        ctx.lineTo(500,300);
+        ctx.beginPath();
+        ctx.strokeStyle = "green"
+        ctx.moveTo(500,300);
         ctx.lineTo(200,500);
         ctx.lineTo(300,180);
         ctx.lineTo(400,500);
