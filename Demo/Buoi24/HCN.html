@@ -7,19 +7,34 @@
     <title>Document</title>
 </head>
 <body>
+    <canvas id="myCanvas" width="800" height="600" style="border: 1px solid blue"></canvas>
     <script>
-    class Rectangle {
-        constructor(ChieuDai,ChieuRong){
-            this.ChieuDai = ChieuDai;
-            this.ChieuRong = ChieuRong
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+
+        class HinhChuNhat {
+            constructor(dai,rong){
+                this.Dai = dai;
+                this.Rong = rong;
+            }
+            tinhDienTich(){
+                return this.Dai * this.Rong;
+            }
+
+            tinhChuVi(){
+                return (this.Dai+this.rong) *2;
+            }
+
+            ve(){
+                ctx.beginPath();
+                ctx.fillStyle = "yellow";
+                ctx.fillRect(100,200,this.Dai,this.Rong);
+            }
+
         }
-        DienTich(){
-            return this.ChieuDai*this.ChieuRong;
-        }
-        chuVi(){
-            return (this.ChieuDai+this.ChieuRong)*2
-        }
-    }
+        let h1 = new HinhChuNhat(70,20);
+        console.log(h1.tinhDienTich(),h1.tinhChuVi());
+        h1.ve();
     </script>
 </body>
 </html>
