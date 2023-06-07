@@ -13,7 +13,7 @@ class ListStudents {
     }
     storeData() {
         localStorage.setItem(KEY, JSON.stringify(this.students))
-        this.students = JSON.parse(localStorage.getItem(KEY))
+        // this.students = JSON.parse(localStorage.getItem(KEY))
     }
 
     addNewStudent(student) {
@@ -42,13 +42,15 @@ class ListStudents {
         return result
     }
 
-    updateStudentById(id, {name, age, gender, klass}) {
+    updateStudentById(id, {name, age, gender,lop, klass,n}) {
         const student = this.searchStudentById(id)
         if(student != null) {
             student.name = name
             student.age = age
             student.gender = gender
+            student.lop = lop
             student.klass = klass
+            student.n = n;
             this.storeData()
         }
        

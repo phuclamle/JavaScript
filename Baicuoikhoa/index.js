@@ -35,14 +35,13 @@ function addNewStudent() {
     const age = document.getElementById('age').value
     const gender = document.getElementById('gender').value
     const klass = document.getElementById('class').value
-    if(name != '' && age != '' && gender != '' && klass != '') {
+    if(name != '' && age != '' && gender != '', klass != '') {
         listStudents.addNewStudent(new Student(name, age, gender, klass))
         document.getElementById('name').value = ''
         document.getElementById('age').value = ''
         document.getElementById('gender').value = ''
         document.getElementById('class').value = ''
-       // displayData()
-       window.location.reload()
+        displayData()
     }
     else {
         console.log('thiếu dữ liệu nhập');
