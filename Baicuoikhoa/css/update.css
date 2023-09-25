@@ -1,0 +1,59 @@
+.update-btn{
+    margin: 30px 0px 0px 30px;
+    border-radius: 3px;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.update-btn:hover{
+    color: var(--color-white);
+    background-color: var(--color-blue2);
+}
+.update-form{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    padding:10px 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+.update-form .title-update{
+    display: flex;
+    justify-content: space-between;
+}
+ .update-form .update-title{
+    padding: 30px 20px;
+    color: var(--color-blue2);
+    font-size: 30px;
+}
+.update-form input{
+    padding: 10px 10px;
+    outline:none;
+}
+.update-form input:focus{
+    outline: 2px solid lightblue;
+}
+.update-form option{
+    padding: 10px;
+}
+.btn-updateform{
+    display: flex;
+    gap: 0px 20px;
+}
+.update-form .return-btn{
+    margin: 30px 0px 0px 30px;
+    border-radius: 3px;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.update-form .return-btn:hover{
+    color: var(--color-white);
+    background-color: var(--color-red1);
+}
+    

@@ -1,0 +1,83 @@
+.add-btn{
+    margin: 30px 0px 0px 30px;
+    border-radius: 3px;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.add-btn:hover{
+    color: var(--color-white);
+    background-color: var(--color-blue2);
+}
+.add-form {
+    background-color: var(--color-white);
+    display: none;
+    flex-direction: column;
+    gap: 20px 0px;
+    padding:10px 20px;
+    width: 80%;
+    margin: 30px auto;
+    
+}
+.add-form.active {
+    display: flex;
+}
+.add-form .title-add{
+    display: flex;
+    justify-content: space-between;
+}
+.add-form .title-add .close-btn{
+   padding: auto;
+   transform: translateY(40%);
+}
+.add-form .title-add .close-btn:hover{
+    color: var(--color-red1);
+    cursor: pointer;
+ }
+.add-form .add-title{
+    padding: 30px 20px;
+    color: var(--color-blue2);
+    font-size: 30px;
+}
+.add-form input{
+    padding: 10px 10px;
+    outline:none;
+}
+.add-form input:focus{
+    outline: 2px solid lightblue;
+}
+.add-form option{
+    padding: 10px;
+}
+.btn-addform{
+    display: flex;
+    gap: 0px 20px;
+}
+.add-form .reset-btn{
+    margin: 30px 0px 0px 30px;
+    border-radius: 3px;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.add-form .reset-btn:hover{
+    color: var(--color-white);
+    background-color: var(--color-red1);
+}
+
+.btn {
+    transition: all .3s ease-in-out;
+    padding: 10px;
+    outline:  none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+

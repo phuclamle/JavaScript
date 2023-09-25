@@ -1,0 +1,63 @@
+ .table{
+    background-color: var(--color-white);
+    margin-top: 30px;
+    padding-top: 10px;
+ }
+ .table .total{
+    margin-left: 30px;
+    color: var(--color-red1);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+ }
+ .table .my-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ .table .my-table table{
+    width: 80%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+ }
+ .table .my-table table tr th{
+    background-color: var(--color-black1);
+    color: var(--color-white);
+    padding: 10px 30px;
+ }
+ .table .my-table table tr td{
+    border: 1px solid var(--color-black1);
+ }
+ .function{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+ }
+ .function .add-btn{
+   background-color: var(--color-blue2);
+ }
+ .function .delete-btn{
+      margin: 30px 0px 0px 30px;
+      border-radius: 3px;
+      outline: none;
+      width: 100px;
+      height: 50px;
+      cursor: pointer;
+      transition: .5s;
+      background-color: var(--color-red1);
+ }
+  .function .delete-btn:hover{
+      color: var(--color-white);
+  }
+ 
+
+
+.table-header {
+   display: none;
+}
+.quick-search {
+   position: relative;
+}
+.show-result {
+   position: absolute;
+   top: 100%;
+}
